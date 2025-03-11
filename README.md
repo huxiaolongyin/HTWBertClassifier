@@ -79,7 +79,7 @@ uvicorn api.main:app --port 6565 --host 0.0.0.0
 ./start.sh
 
 # Windows
-start.bat
+./start.bat
 ```
 
 服务将在本地的6565端口启动。

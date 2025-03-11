@@ -12,5 +12,8 @@ set LOG_FILE=logs\api_%TIMESTAMP%.log
 echo Starting BERT Classification API on http://0.0.0.0:6565
 echo Logs will be saved to %LOG_FILE%
 
+REM 激活虚拟环境
+.venv/Scripts/activate
+
 REM 启动服务并将输出重定向到日志文件
 uvicorn api.main:app --host 0.0.0.0 --port 6565 --log-level info > %LOG_FILE% 2>&1
